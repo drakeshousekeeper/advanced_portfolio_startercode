@@ -2,27 +2,49 @@
 
 
 
-/* General CSS */
+/* Nav Bar CSS */
+    .navbar{    
+       background-color: #C0C0C0;
+       border: none;
+       font-family: 'Playfair Display', serif;
+       color: white;
+    }
+    
+    .navbar .navbar-nav li a {
+        color: white;
+    }
+
+/* Header CSS */
+    #header img {    
+       display: block;
+       margin: 0 auto 20px;
+    }   
+    #header{   
+       margin-top: 120px;    
+    }   
+    #header .portrait {
+       height: 250px;
+    }
+
+/* Section CSS */
+    a{
+        color: black;
+    }
+    
+    section {
+       margin: 8%;
+    }
+    
     p{
         font-family: 'Lato', sans-serif;
     }
     
     h2{
         font-family: 'Playfair Display', serif;
+        margin: 0;
+        font-size: 3em;
+        margin-bottom: 10px;
     }
-
-/* Nav Bar CSS */
-    .navbar {    
-       background: #C0C0C0;
-       border: none;
-       font-family: 'Playfair Display', serif;
-    }
-
-/* Header CSS */
-
-
-/* Section CSS */
-
 
 /* About Section CSS */
 
@@ -50,4 +72,23 @@
      }
 
 /* Button CSS */
-
+    .btn-outline {    
+     color: white;   
+     font-size: 20px;
+     background: 0 0;    
+     transition: all .3s ease-in-out;  
+    }   
+     
+    .btn-social {   
+    display: inline-block;    
+    height: 50px;   
+    width: 50px;    
+    border-radius: 100%;    
+    text-align: center;   
+    font-size: 20px;      
+    }
+    
+    .btn-social i {
+    line-height: 45px;
+    }
+ 
