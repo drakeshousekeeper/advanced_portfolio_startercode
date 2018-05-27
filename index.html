@@ -1,120 +1,158 @@
-<!-- 
-    Class 1:
-        1.1 Wireframe your project
-        1.2 Fork and clone the repo and set up your project workspace
-    Class 2:  
-        2.1 Link your files in the head of the docment Add a Nav Bar to your site - It should have three links (Portfolio, About, and Contact) 
-        2.2 Add a div for each section. Within section add a contatiner div with the appropriate number of rows and columns
-    Class 3:  
-        3.1 Add thumbnails and other custom component (button, modal, font) using bootstrap Documentation 
-        3.2 Add CSS and add your site to gh-pages 
--->
-
 <!DOCTYPE html>
     <head>   
-        <!--Title -->
-        <title>Portfolio</title>
-        
-        <!-- Your CSS  -->
+    <!--Title -->
+        <title>SYNDRA</title>
+    <!-- Your CSS  -->
         <link href="css/style.css" rel="stylesheet">
-        
-        <!-- Bootstrap CSS  -->
+    <!-- Bootstrap CSS  -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
-        <!-- Fontawesome CSS  -->
+    <!-- Fontawesome CSS  -->
+        <script src="https://use.fontawesome.com/a10c7a379a.js"></script>
+    <!-- Jquery Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Bootstrap Javascript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Your Javascript -->
+        <script src="js/script.js"></script>
     </head>
     <body>
-        <!-- Nav Bar -->
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Syndra</a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> MENU <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
-            </nav>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
             
         <!-- Header -->
-                <div class="row">
-                    <div class="col-xs-6">6</div><div class="col-xs-6">6</div>
+                <div class="row" id="header">
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                        </ul>
+                    </div>
                 </div>
             
         <!-- About Section -->
-                <div class="row">
-                    <div class="col-xs-6">6</div><div class="col-xs-6">6</div>
+            <div id="about">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>About</h2>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie purus in justo bibendum commodo. Aliquam purus metus, bibendum at dictum ac, viverra ac neque. Praesent nunc ex, rutrum nec gravida id, cursus tempus tellus. Donec condimentum rhoncus blandit. Nunc id interdum mi, sed tincidunt eros. Pellentesque porttitor erat eu ligula venenatis interdum. Pellentesque odio tellus, feugiat ac fringilla et, elementum pharetra metus. Proin et consequat orci. Sed id euismod ex, sit amet ullamcorper libero. Proin eget feugiat turpis. Praesent sollicitudin magna vel nisi viverra posuere. Quisque mauris augue, elementum et fermentum at, semper eu nunc. Nullam quis quam non sem interdum mattis. Suspendisse auctor ullamcorper augue id porttitor.</p>
+                </div>
+            </div>
+            </div>
             
         <!--Portfolio Grid Section-->
-                <div class="row">
-                    <a class="thumbnail" href="#">
-                        <div class="col-xs-4">4</div>
-                    </a>
-                        <div class="caption">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
-                    <a class="thumbnail" href="#">
-                        <div class="col-xs-4">4</div>
-                    </a>
-                        <div class="caption">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
-                    <a class="thumbnail" href="#">
-                        <div class="col-xs-4">4</div>
-                    </a>
-                        <div class="caption">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
+            <div id="projects">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Projects</h2>
                 </div>
-                <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
                     <a class="thumbnail" href="#">
-                        <div class="col-xs-4">4</div>
+                        <image src="images/savetheforest-home-part.png"/>
                     </a>
-                        <div class="caption">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
-                    <a class="thumbnail" href="#">
-                        <div class="col-xs-4">4</div>
-                    </a>
-                        <div class="caption">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
-                    <a class="thumbnail" href="#">
-                        <div class="col-xs-4">4</div>
-                    </a>
-                        <div class="caption">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
+                    <div class="caption">
+                        <h3>TITLE</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie purus in justo bibendum commodo.</p>
+                    </div>
                 </div>
-           
-        <!-- Contact Section -->
-                <div class="row">
-                    <div class="col-xs-6">6</div><div class="col-xs-6">6</div>
+                   
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="#">
+                        <image src="images/savetheforest-home-part.png"/>
+                    </a>
+                    <div class="caption">
+                        <h3>TITLE</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie purus in justo bibendum commodo.</p>
+                    </div>
                 </div>
-        
+                
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="#">
+                        <image src="images/savetheforest-home-part.png"/>
+                    </a>
+                    <div class="caption">
+                        <h3>TITLE</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie purus in justo bibendum commodo.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <br>
+                
         <!-- Footer -->
-                <div class="row">
-                    <div class="col-xs-12">12</div>
+            <footer class="text-center">
+                <div class="footer-above">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col col-sm-4">
+                                <h3>Location</h3>
+                                <p> New York, NY </p>
+                            </div>
+                            
+                            <div class="footer-col col-sm-4" id="contact">
+                                <h3>Contact</h3>
+                                <ul class="list-inline">
+                                    <p>s.kyddhardy@gmail.com</p>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline">
+                                        <i class="fa fa-fw fa-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="footer-col col-sm-4">
+                                 <h3>About ScriptEd</h3>
+                                 <p>Visit to learn more about <a href="http://scripted.org/">ScriptEd</a>.</p>
+                             </div>
+                        </div>
+                    </div>
                 </div>
-        
-        
-        <!-- Jquery Script -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        
-        <!--Bootstrap Javascript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
-        <!-- Your Javascript -->
-        <script src="js/script.js"></script>
+                <div class="footer-below">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                 Copyright &copy; SYNDRA 2017
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </body>
 </html>
